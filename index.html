@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portofolio Rina Adella Pratiwi, lulusan Teknik Otomasi PPNS.">
-
-    <title>Portofolio | Rina Adella Pratiwi</title>
-
+    <meta name="description" content="Portofolio Rina Adella Pratiwi - Teknik Otomasi, IoT, SCADA, dan computer vision.">
+    <title>Rina Adella Pratiwi | Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navbar -->
+    <canvas id="bubbles" aria-hidden="true"></canvas>
+
     <header>
+        <div class="progress" aria-hidden="true"></div>
         <nav class="navbar">
-            <h2 class="logo">Rina.</h2>
-
-            <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
-
-            <ul class="nav-links" id="navLinks">
+            <a href="#home" class="logo">Rina.</a>
+            <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">Menu</button>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">Tentang</a></li>
-                <li><a href="#education">Pendidikan</a></li>
-                <li><a href="#awards">Penghargaan</a></li>
                 <li><a href="#experience">Pengalaman</a></li>
+                <li><a href="#achievements">Penghargaan</a></li>
                 <li><a href="#projects">Proyek</a></li>
                 <li><a href="#organization">Organisasi</a></li>
                 <li><a href="#skills">Skill</a></li>
@@ -33,422 +33,127 @@
         </nav>
     </header>
 
-
     <!-- Hero -->
     <section id="home" class="hero">
-
         <div class="hero-text">
             <p class="greeting">Halo, saya</p>
-
             <h1>Rina Adella Pratiwi</h1>
-
-            <h2>Automation Engineer</h2>
-
+            <h2>Teknik Otomasi: IoT, SCADA &amp; Computer Vision</h2>
             <p>
-                Lulusan Teknik Otomasi Politeknik Perkapalan Negeri Surabaya (PPNS)
-                dengan minat pada otomasi, robotika, dan sistem kendali industri.
+                Lulusan Teknik Otomasi Politeknik Perkapalan Negeri Surabaya
+                yang tertarik pada otomasi, robotika, dan sistem kendali industri.
             </p>
-
             <div class="hero-buttons">
                 <a href="#projects" class="btn">Lihat Proyek</a>
                 <a href="#contact" class="btn secondary">Hubungi Saya</a>
+                <a href="CV_RINA_ADELLA_PRATIWI.pdf" class="btn ghost" download>Unduh CV</a>
             </div>
         </div>
 
-        <div class="hero-photo">
-            <img src="images/foto-profil.jpg" alt="Foto Rina Adella Pratiwi">
+        <!-- FOTO PROFIL: simpan sebagai images/profil.jpg -->
+        <div class="photo-wrap">
+            <span class="sonar"></span>
+            <span class="sonar"></span>
+            <div class="img-slot hero-photo" data-label="Foto profil">
+                <img src="images/profil.jpg" alt="Foto Rina Adella Pratiwi">
+            </div>
         </div>
-
     </section>
-
 
     <!-- About -->
     <section id="about" class="section">
-
         <h2 class="section-title">Tentang Saya</h2>
-
         <div class="about-content">
             <div class="about-text">
                 <p>
                     Lulusan Teknik Otomasi dari Politeknik Perkapalan Negeri Surabaya (PPNS)
-                    dengan minat yang kuat pada bidang otomasi, robotika, dan sistem kendali
-                    industri. Berpengalaman dalam mengembangkan proyek teknik yang melibatkan
-                    mikrokontroler, sensor, otomasi industri, computer vision, IoT, serta
-                    implementasi sistem kendali.
+                    dengan minat yang kuat pada otomasi, robotika, dan sistem kendali industri.
+                    Berpengalaman dalam proyek yang melibatkan mikrokontroler, sensor,
+                    otomasi industri, computer vision, IoT, dan implementasi sistem kendali.
                 </p>
-
                 <p>
-                    Melalui berbagai proyek teknis, pengalaman magang, dan keterlibatan dalam
-                    organisasi kampus, saya memiliki kemampuan berpikir analitis, pemecahan
-                    masalah, kerja sama tim, adaptasi, komunikasi teknis, dan dokumentasi.
-                    Saya termotivasi untuk menerapkan pengetahuan dan keterampilan teknis,
-                    terus belajar, menghadapi tantangan baru, serta berkembang di lingkungan
-                    kerja profesional di bidang teknik.
+                    Lewat proyek teknis, magang, dan organisasi kampus, saya terbiasa berpikir
+                    analitis, memecahkan masalah, bekerja dalam tim, dan mendokumentasikan hasil kerja.
+                    Saya ingin terus belajar dan berkembang di lingkungan kerja profesional bidang teknik.
                 </p>
             </div>
         </div>
-
     </section>
-
-
-    <!-- Education -->
-    <section id="education" class="section">
-
-        <h2 class="section-title">Pendidikan</h2>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <span class="date">Agu 2026</span>
-                <h3>Politeknik Perkapalan Negeri Surabaya</h3>
-                <p class="meta">Surabaya, Indonesia</p>
-                <p>Sarjana Terapan Teknik Otomasi, IPK: 3.55/4.00</p>
-                <p class="muted">Mata kuliah: Mikrokontroler, PLC, Instrumentasi, Pengujian dan Inspeksi, K3, Bahasa Inggris</p>
-            </div>
-
-            <div class="timeline-item">
-                <span class="date">Agu 2019 – Agu 2022</span>
-                <h3>SMA Negeri Jogoroto</h3>
-                <p class="meta">Jombang, Indonesia</p>
-                <p>IPA</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Awards -->
-    <section id="awards" class="section">
-
-        <h2 class="section-title">Penghargaan</h2>
-
-        <div class="cards-container">
-
-            <div class="card">
-                <div class="card-image">
-                    <img src="images/penghargaan-krsti-2024.jpg" alt="Juara 3 KRSTI Regional 2024">
-                </div>
-                <div class="card-content">
-                    <span class="date">Jul 2024</span>
-                    <h3>Juara 3 Kontes Robot Seni Tari Indonesia (KRSTI) Regional</h3>
-                    <p>Balai Pengembangan Talenta Indonesia (BPTI) Pusat Prestasi Nasional Puspresnas</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-image">
-                    <img src="images/penghargaan-krsti-2023.jpg" alt="Juara 4 KRSTI Regional 2023">
-                </div>
-                <div class="card-content">
-                    <span class="date">Jul 2023</span>
-                    <h3>Juara 4 Kontes Robot Seni Tari Indonesia (KRSTI) Regional</h3>
-                    <p>Balai Pengembangan Talenta Indonesia (BPTI) Pusat Prestasi Nasional Puspresnas</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-image">
-                    <img src="images/penghargaan-debate-2022.jpg" alt="Juara 2 Debate Competition 2022">
-                </div>
-                <div class="card-content">
-                    <span class="date">Nov 2022</span>
-                    <h3>Juara 2 Debate Competition</h3>
-                    <p>Politeknik Perkapalan Negeri Surabaya – DPM PPNS</p>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
 
     <!-- Experience -->
     <section id="experience" class="section">
-
-        <h2 class="section-title">Pengalaman Kerja</h2>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <span class="date">Sep 2025 – Des 2025</span>
-                <h3>Automation Engineering Intern</h3>
-                <p class="meta">ROV Indonesia · Surabaya, Indonesia</p>
-                <ul>
-                    <li>Membantu proses perakitan dan pengujian sistem kelistrikan serta kontrol ROV untuk memastikan integrasi dan fungsi sistem berjalan sesuai standar.</li>
-                    <li>Melakukan functional testing dan validasi sistem, menganalisis hasil pengujian, serta mendokumentasikan temuan teknis sebagai dasar perbaikan.</li>
-                    <li>Mendukung preventive maintenance dan kalibrasi peralatan elektronik, sensor, serta perangkat komunikasi untuk menjaga akurasi dan performa peralatan.</li>
-                </ul>
-            </div>
-
-            <div class="timeline-item">
-                <span class="date">Nov 2024 – Jul 2025</span>
-                <h3>Laboratory Assistant – Navigation and Communication Lab</h3>
-                <p class="meta">Politeknik Perkapalan Negeri Surabaya (PPNS) · Surabaya, Indonesia</p>
-                <ul>
-                    <li>Mengelola administrasi keuangan penelitian, termasuk penyusunan anggaran dan monitoring pengeluaran untuk memastikan penggunaan sumber daya berjalan efektif.</li>
-                    <li>Membantu penyusunan dan publikasi jurnal penelitian dengan memastikan kelengkapan serta kualitas dokumen sebelum publikasi.</li>
-                    <li>Menyusun presentasi dan materi dokumentasi kegiatan penelitian dan laboratorium secara sistematis.</li>
-                    <li>Mengkoordinasikan kunjungan lapangan untuk pengujian peralatan Automatic Identification System (AIS), termasuk persiapan logistik dan pelaksanaan kegiatan.</li>
-                    <li>Mendukung proses pengumpulan dan pencatatan data lapangan untuk memastikan data yang diperoleh akurat dan lengkap.</li>
-                </ul>
-            </div>
-
-        </div>
-
+        <h2 class="section-title">Pengalaman Kerja &amp; Pendidikan</h2>
+        <div class="timeline" id="experience-list"></div>
     </section>
 
+    <!-- Achievements -->
+    <section id="achievements" class="section">
+        <h2 class="section-title">Penghargaan</h2>
+        <div class="achievements-container" id="achievement-list"></div>
+    </section>
 
     <!-- Projects -->
     <section id="projects" class="section">
-
-        <h2 class="section-title">Proyek</h2>
-
-        <div class="cards-container">
-
-            <div class="card">
-                <div class="card-image">
-                    <img src="images/proyek-uwb.jpg" alt="Sistem Indoor Positioning UWB">
-                </div>
-                <div class="card-content">
-                    <span class="date">Feb 2026 – Jul 2026</span>
-                    <h3>Sistem Indoor Positioning untuk Monitoring Pekerja Menggunakan Teknologi Ultra-Wideband (UWB)</h3>
-                    <p class="goal">Tujuan: Mengembangkan sistem monitoring pekerja secara real-time menggunakan teknologi UWB untuk pengukuran jarak, penentuan posisi, dan visualisasi data berbasis web.</p>
-                    <ul>
-                        <li>Merancang, merakit, dan mengkalibrasi perangkat keras UWB: ESP32, modul DWM1000, autentikasi sidik jari, dan rangkaian pendukung.</li>
-                        <li>Melakukan pengukuran jarak, pengujian fungsional, dan validasi sistem untuk mengevaluasi akurasi dan kinerja.</li>
-                        <li>Menganalisis hasil pengukuran dan troubleshooting untuk mengidentifikasi kesalahan serta meningkatkan keandalan sistem.</li>
-                        <li>Mengembangkan firmware dan menerapkan algoritma trilaterasi untuk penentuan posisi pekerja secara real-time.</li>
-                        <li>Mendokumentasikan hasil pengujian dan kinerja sistem sebagai bahan evaluasi dan pengembangan.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-image">
-                    <img src="images/proyek-sortir-botol.jpg" alt="Sistem Sortir Botol Otomatis">
-                </div>
-                <div class="card-content">
-                    <span class="date">Jul 2025</span>
-                    <h3>Sistem Sortir Botol Otomatis Berdasarkan Klasifikasi Material pada Industri Daur Ulang</h3>
-                    <p class="goal">Tujuan: Mengembangkan sistem sortir botol otomatis yang mampu mengklasifikasikan botol berdasarkan jenis material menggunakan teknologi computer vision.</p>
-                    <ul>
-                        <li>Mengembangkan sistem sortir otomatis dengan computer vision berbasis YOLOv11 untuk mengidentifikasi dan mengklasifikasikan material botol.</li>
-                        <li>Melatih dan mengintegrasikan model deteksi objek untuk klasifikasi material secara real-time.</li>
-                        <li>Mengimplementasikan mekanisme sortir otomatis untuk meningkatkan efisiensi daur ulang dan mengurangi kesalahan penyortiran manual.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-image">
-                    <img src="images/proyek-scada.jpg" alt="Computer Integrated System SCADA">
-                </div>
-                <div class="card-content">
-                    <span class="date">Apr 2025</span>
-                    <h3>Computer Integrated System – SCADA</h3>
-                    <p class="goal">Tujuan: Mengembangkan modul SCADA untuk monitoring, pengendalian, dan integrasi proses industri secara real-time.</p>
-                    <ul>
-                        <li>Mengembangkan modul SCADA untuk memonitor dan mengendalikan proses industri secara real-time.</li>
-                        <li>Menguji dan memvalidasi komunikasi serta akuisisi data agar sistem berjalan sesuai fungsi.</li>
-                        <li>Mengimplementasikan fitur visualisasi untuk mempermudah monitoring dan pengendalian operasional sistem.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-image">
-                    <img src="images/proyek-fish-feeder.jpg" alt="Automatic Fish Feeder Berbasis IoT">
-                </div>
-                <div class="card-content">
-                    <span class="date">Nov 2023</span>
-                    <h3>Automatic Fish Feeder Berbasis IoT</h3>
-                    <p class="goal">Tujuan: Mengembangkan sistem pemberi pakan ikan otomatis berbasis IoT dengan pengaturan jadwal dan monitoring secara real-time.</p>
-                    <ul>
-                        <li>Merancang sistem pemberi pakan ikan otomatis berbasis IoT dengan jadwal pemberian pakan terprogram.</li>
-                        <li>Mengimplementasikan monitoring dan pengendalian jarak jauh melalui aplikasi mobile.</li>
-                        <li>Mengintegrasikan sensor dan komunikasi nirkabel untuk meningkatkan efisiensi dan keandalan sistem.</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-
+        <h2 class="section-title">Proyek Saya</h2>
+        <div class="projects-container" id="project-list"></div>
     </section>
-
 
     <!-- Organization -->
     <section id="organization" class="section">
-
         <h2 class="section-title">Pengalaman Organisasi</h2>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <span class="date">Jan 2023 – Agu 2024</span>
-                <h3>Artship – Tim Robot Seni Tari</h3>
-                <p class="meta">Marine Robotic Community, UKM Robot PPNS · Surabaya</p>
-                <ul>
-                    <li>Bertanggung jawab merancang dan mengembangkan struktur serta fungsi robot.</li>
-                    <li>Membuat dan merancang kostum robot sesuai kebutuhan kompetisi.</li>
-                    <li>Memprogram gerakan tangan robot secara presisi untuk mendukung performa robot.</li>
-                </ul>
-            </div>
-
-            <div class="timeline-item">
-                <span class="date">Jul 2024 – Des 2024</span>
-                <h3>Panitia Divisi Acara</h3>
-                <p class="meta">Automation Week VII · Kompetisi Mahasiswa Nasional Bidang Robotika, PLC, dan Essay</p>
-                <ul>
-                    <li>Berkolaborasi menyusun konsep kegiatan, jadwal, serta rangkaian acara secara keseluruhan.</li>
-                    <li>Mendukung pelaksanaan kegiatan di lapangan, termasuk kelancaran setiap sesi dan registrasi peserta.</li>
-                    <li>Menangani penyesuaian kegiatan secara langsung serta memastikan kebutuhan acara terpenuhi.</li>
-                    <li>Memantau jalannya kegiatan dan menangani kendala agar acara berjalan lancar bagi peserta dan tamu.</li>
-                </ul>
-            </div>
-
-            <div class="timeline-item">
-                <span class="date">Okt 2024</span>
-                <h3>Liaison Officer (LO)</h3>
-                <p class="meta">Kontes Kapal Indonesia 2024 · Kompetisi Teknologi Maritim dan Perkapalan Mahasiswa Tingkat Nasional</p>
-                <ul>
-                    <li>Menjadi narahubung utama peserta: memberikan informasi kegiatan, pembaruan jadwal, serta menangani pertanyaan dan kendala.</li>
-                    <li>Mengelola komunikasi antara juri dan peserta untuk menangani permasalahan dan memberikan klarifikasi.</li>
-                    <li>Memantau pelaksanaan kegiatan, memastikan peserta mematuhi peraturan, mengatur jadwal, serta menangani konflik antara peserta, juri, dan panitia.</li>
-                </ul>
-            </div>
-
-            <div class="timeline-item">
-                <span class="date">Mar 2024 – Des 2024</span>
-                <h3>Anggota Departemen Minat dan Bakat</h3>
-                <p class="meta">Himpunan Mahasiswa Teknik Otomasi (HIMATO PPNS) · Surabaya</p>
-                <ul>
-                    <li>Berperan aktif sebagai panitia kompetisi bakat dan olahraga tingkat departemen.</li>
-                    <li>Berkontribusi dalam pelaksanaan program dan agenda pengembangan internal departemen.</li>
-                </ul>
-            </div>
-
-            <div class="timeline-item">
-                <span class="date">Jan 2023 – Des 2023</span>
-                <h3>Anggota Divisi Latihan dan Pengembangan</h3>
-                <p class="meta">Dewan Perwakilan Mahasiswa (DPM PPNS) · Surabaya</p>
-                <ul>
-                    <li>Membantu mengevaluasi efektivitas program dengan mengumpulkan umpan balik peserta sebagai bahan perbaikan kegiatan berikutnya.</li>
-                </ul>
-            </div>
-
-        </div>
-
+        <div class="timeline" id="organization-list"></div>
     </section>
-
-
-    <!-- Certification -->
-    <section id="certification" class="section">
-
-        <h2 class="section-title">Sertifikasi</h2>
-
-        <div class="skills-container two-col">
-
-            <div class="skill">
-                <h3>Test of English Competency (TEC)</h3>
-                <p>International Test Center (ITC), Skor: 600</p>
-                <p class="muted">Jun 2026</p>
-            </div>
-
-            <div class="skill">
-                <h3>Sertifikasi Kompetensi Skema Engineer</h3>
-                <p>LSP P1 PPNS – BNSP</p>
-                <p class="muted">Agu 2026</p>
-            </div>
-
-        </div>
-
-    </section>
-
 
     <!-- Skills -->
     <section id="skills" class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
 
-        <h2 class="section-title">Kemampuan</h2>
-
-        <div class="skills-groups">
-
-            <div class="skill-group">
+            <div class="skill">
                 <h3>Technical Skills</h3>
-                <div class="tags">
-                    <span>Microsoft Office (Word, Excel, PowerPoint)</span>
-                    <span>MATLAB</span>
-                    <span>Python</span>
-                    <span>Arduino IDE</span>
-                    <span>Visual Studio Code</span>
-                    <span>IoT</span>
-                    <span>Pengujian dan Pengukuran</span>
-                    <span>Sensor dan Aktuator</span>
-                    <span>Mikrokontroler</span>
-                    <span>Integrasi Sistem</span>
-                    <span>Fusion 360</span>
-                    <span>Canva</span>
-                    <span>Wix Editor</span>
-                </div>
+                <p>MATLAB, Python, Arduino IDE, Visual Studio Code, IoT, mikrokontroler, sensor dan aktuator, integrasi sistem, pengujian dan pengukuran.</p>
             </div>
 
-            <div class="skill-group">
+            <div class="skill">
+                <h3>Desain &amp; Dokumen</h3>
+                <p>Fusion 360, Canva, Wix Editor, Microsoft Office (Word, Excel, PowerPoint).</p>
+            </div>
+
+            <div class="skill">
                 <h3>Soft Skills</h3>
-                <div class="tags">
-                    <span>Komunikasi</span>
-                    <span>Kerja Tim</span>
-                    <span>Kolaborasi</span>
-                    <span>Manajemen Waktu</span>
-                    <span>Pemecahan Masalah</span>
-                    <span>Berpikir Kritis</span>
-                    <span>Ketelitian</span>
-                    <span>Analisis</span>
-                    <span>Adaptabilitas</span>
-                    <span>Penyelesaian Konflik</span>
-                    <span>Etos Kerja</span>
-                    <span>Kemauan Belajar</span>
-                </div>
+                <p>Komunikasi, kerja tim, kolaborasi, manajemen waktu, pemecahan masalah, berpikir kritis, ketelitian, adaptabilitas, penyelesaian konflik.</p>
             </div>
 
-            <div class="skill-group">
-                <h3>Bahasa</h3>
-                <div class="tags">
-                    <span>Indonesia</span>
-                    <span>Inggris</span>
-                </div>
+            <div class="skill">
+                <h3>Sertifikasi</h3>
+                <p>TEC (ITC), skor 600, Jun 2026. Sertifikasi Kompetensi Skema Engineer, LSP P1 PPNS - BNSP, Agu 2026.</p>
             </div>
 
         </div>
-
+        <p class="lang-note">Bahasa: Indonesia, Inggris</p>
     </section>
-
 
     <!-- Contact -->
     <section id="contact" class="section contact">
-
         <h2 class="section-title">Kontak</h2>
-
-        <p>Tertarik untuk bekerja sama atau ingin menghubungi saya?</p>
-
+        <p>Tertarik bekerja sama atau ingin berdiskusi? Hubungi saya.</p>
         <div class="contact-links">
-            <a href="mailto:adellprtwiii@gmail.com">adellprtwiii@gmail.com</a>
+            <a href="mailto:adellprtwiii@gmail.com">Email</a>
             <a href="https://wa.me/6285732474403">WhatsApp</a>
-            <a href="https://linkedin.com/in/username">LinkedIn</a>
-            <a href="https://github.com/username">GitHub</a>
+            <a href="https://www.linkedin.com/in/username" target="_blank" rel="noopener">LinkedIn</a>
         </div>
-
-        <p class="location">Jombang, Indonesia</p>
-
     </section>
 
+    <div class="wave-divider" aria-hidden="true">
+        <svg class="wave w1" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0 60 C150 20 450 100 600 60 C750 20 1050 100 1200 60 V120 H0Z"/></svg>
+        <svg class="wave w2" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0 70 C150 30 450 110 600 70 C750 30 1050 110 1200 70 V120 H0Z"/></svg>
+        <svg class="wave w3" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0 85 C150 55 450 115 600 85 C750 55 1050 115 1200 85 V120 H0Z"/></svg>
+    </div>
 
-    <!-- Footer -->
     <footer>
         <p>© 2026 Rina Adella Pratiwi. All Rights Reserved.</p>
     </footer>
 
-
     <script src="script.js"></script>
-
 </body>
 </html>
