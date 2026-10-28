@@ -42,13 +42,13 @@ const achievements = [
         date: "Jul 2024",
         title: "Juara 3 Kontes Robot Seni Tari Indonesia (KRSTI) Regional",
         text: "Balai Pengembangan Talenta Indonesia (BPTI) Pusat Prestasi Nasional Puspresnas",
-        image: "images/penghargaan-krsti-2024.jpg"
+        image: "penghargaan-krsti-2024.jpg"
     },
     {
         date: "Jul 2023",
         title: "Juara 4 Kontes Robot Seni Tari Indonesia (KRSTI) Regional",
         text: "Balai Pengembangan Talenta Indonesia (BPTI) Pusat Prestasi Nasional Puspresnas",
-        image: "images/penghargaan-krsti-2023.jpg"
+        image: "penghargaan-krsti-2023.jpg"
     },
     {
         date: "Nov 2022",
