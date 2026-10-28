@@ -68,15 +68,14 @@ header {
 .hero p { margin: 20px 0; color: var(--muted); }
 .hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; }
 
-.photo-wrap { position: relative; width: 300px; height: 300px; flex-shrink: 0; }
-.hero-photo { position: absolute; inset: 0; border-radius: 20px; border: 3px solid var(--accent); }
+.photo-wrap { position: relative; width: 320px; height: 400px; flex-shrink: 0; margin: 22px; }
+.hero-photo { position: absolute; inset: 0; border-radius: 10px; border: 2px solid var(--accent); }
 .hero-photo img { object-position: center top; }
-.sonar {
-    position: absolute; inset: 0; border: 2px solid var(--accent);
-    border-radius: 20px; opacity: 0; animation: sonar 4s ease-out infinite;
-}
-.sonar:nth-child(2) { animation-delay: 2s; }
-@keyframes sonar { 0% { transform: scale(1); opacity: .6; } 100% { transform: scale(1.35); opacity: 0; } }
+
+/* Bingkai berlapis di sekeliling foto */
+.sonar { position: absolute; border: 1px solid; pointer-events: none; }
+.sonar:nth-child(1) { inset: -7px; border-color: rgba(45, 212, 191, .55); border-radius: 14px; }
+.sonar:nth-child(2) { inset: -22px; border-color: var(--line); border-radius: 20px; }
 
 
 /* Image slot (gambar yang belum diganti tampil sebagai placeholder berlabel) */
@@ -180,7 +179,7 @@ footer { text-align: center; padding: 30px; background: #020a14; color: var(--mu
     .achievements-container, .projects-container { grid-template-columns: 1fr; }
     .skills-container { grid-template-columns: 1fr 1fr; }
     .hero { flex-direction: column-reverse; align-items: flex-start; gap: 40px; }
-    .photo-wrap { width: 220px; height: 220px; }
+    .photo-wrap { width: 240px; height: 300px; }
     .menu-toggle { display: block; }
     .nav-links {
         display: none; position: absolute; top: 100%; left: 0; right: 0;
@@ -200,7 +199,6 @@ footer { text-align: center; padding: 30px; background: #020a14; color: var(--mu
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .sonar, .wave { animation: none; }
-    .sonar { display: none; }
+    .wave { animation: none; }
     html { scroll-behavior: auto; }
 }
