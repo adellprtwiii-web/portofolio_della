@@ -70,7 +70,7 @@ const projects = [
             "Mengembangkan firmware dan menerapkan algoritma trilaterasi untuk penentuan posisi pekerja secara real-time.",
             "Mendokumentasikan hasil pengujian dan kinerja sistem."
         ],
-        image: "images/proyek-uwb.jpg"
+        image: "proyek-uwb.jpg"
     },
     {
         date: "Jul 2025",
