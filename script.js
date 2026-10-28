@@ -92,7 +92,7 @@ const projects = [
             "Menguji dan memvalidasi komunikasi serta akuisisi data.",
             "Mengimplementasikan fitur visualisasi untuk mempermudah monitoring dan pengendalian."
         ],
-        image: "images/proyek-scada.jpg"
+        image: "proyek-scada.jpg"
     },
     {
         date: "Nov 2023",
