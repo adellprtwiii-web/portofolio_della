@@ -103,7 +103,7 @@ const projects = [
             "Mengimplementasikan monitoring dan pengendalian jarak jauh lewat aplikasi mobile.",
             "Mengintegrasikan sensor dan komunikasi nirkabel untuk efisiensi dan keandalan sistem."
         ],
-        image: "images/proyek-fish-feeder.jpg"
+        image: "proyek-fish-feeder.jpg"
     }
 ];
 
