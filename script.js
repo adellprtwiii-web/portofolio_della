@@ -1,9 +1,15 @@
 /* ===== DATA ===== */
 
 const experience = [
+     {
+        date: "Agu 2026",
+        title: "Sarjana Terapan Teknik Otomasi, IPK 3.55/4.00",
+        meta: "Politeknik Perkapalan Negeri Surabaya · Surabaya",
+        text: "Mata kuliah: Mikrokontroler, PLC, Instrumentasi, Pengujian dan Inspeksi, K3, Bahasa Inggris."
+    },
     {
         date: "Sep 2025 – Des 2025",
-        title: "Automation Engineering Intern",
+        title: "Mechatronik Engineering Intern",
         meta: "ROV Indonesia · Surabaya",
         points: [
             "Membantu perakitan dan pengujian sistem kelistrikan serta kontrol ROV agar integrasi dan fungsi sistem sesuai standar.",
@@ -22,12 +28,6 @@ const experience = [
             "Mengkoordinasikan kunjungan lapangan untuk pengujian peralatan Automatic Identification System (AIS).",
             "Mendukung pengumpulan dan pencatatan data lapangan agar akurat dan lengkap."
         ]
-    },
-    {
-        date: "Agu 2026",
-        title: "Sarjana Terapan Teknik Otomasi, IPK 3.55/4.00",
-        meta: "Politeknik Perkapalan Negeri Surabaya · Surabaya",
-        text: "Mata kuliah: Mikrokontroler, PLC, Instrumentasi, Pengujian dan Inspeksi, K3, Bahasa Inggris."
     },
     {
         date: "Agu 2019 – Agu 2022",
