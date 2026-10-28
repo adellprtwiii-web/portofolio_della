@@ -54,7 +54,7 @@ const achievements = [
         date: "Nov 2022",
         title: "Juara 2 Debate Competition",
         text: "Politeknik Perkapalan Negeri Surabaya – DPM PPNS",
-        image: "images/penghargaan-debate-2022.jpg"
+        image: "penghargaan-debate-2022.jpg"
     }
 ];
 
@@ -81,7 +81,7 @@ const projects = [
             "Melatih dan mengintegrasikan model deteksi objek untuk klasifikasi material secara real-time.",
             "Mengimplementasikan mekanisme sortir otomatis untuk menaikkan efisiensi daur ulang dan mengurangi kesalahan sortir manual."
         ],
-        image: "images/proyek-sortir-botol.jpg"
+        image: "proyek-sortir-botol.jpg"
     },
     {
         date: "Apr 2025",
