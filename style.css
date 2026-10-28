@@ -68,14 +68,15 @@ header {
 .hero p { margin: 20px 0; color: var(--muted); }
 .hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; }
 
-.photo-wrap { position: relative; width: 280px; height: 340px; flex-shrink: 0; }
-.hero-photo { position: absolute; inset: 0; border-radius: 50% 50% 46% 46% / 40% 40% 60% 60%; border: 3px solid var(--accent); }
+.photo-wrap { position: relative; width: 300px; height: 300px; flex-shrink: 0; }
+.hero-photo { position: absolute; inset: 0; border-radius: 20px; border: 3px solid var(--accent); }
+.hero-photo img { object-position: center top; }
 .sonar {
     position: absolute; inset: 0; border: 2px solid var(--accent);
-    border-radius: 50%; opacity: 0; animation: sonar 4s ease-out infinite;
+    border-radius: 20px; opacity: 0; animation: sonar 4s ease-out infinite;
 }
 .sonar:nth-child(2) { animation-delay: 2s; }
-@keyframes sonar { 0% { transform: scale(1); opacity: .6; } 100% { transform: scale(1.7); opacity: 0; } }
+@keyframes sonar { 0% { transform: scale(1); opacity: .6; } 100% { transform: scale(1.35); opacity: 0; } }
 
 
 /* Image slot (gambar yang belum diganti tampil sebagai placeholder berlabel) */
@@ -179,7 +180,7 @@ footer { text-align: center; padding: 30px; background: #020a14; color: var(--mu
     .achievements-container, .projects-container { grid-template-columns: 1fr; }
     .skills-container { grid-template-columns: 1fr 1fr; }
     .hero { flex-direction: column-reverse; align-items: flex-start; gap: 40px; }
-    .photo-wrap { width: 200px; height: 250px; }
+    .photo-wrap { width: 220px; height: 220px; }
     .menu-toggle { display: block; }
     .nav-links {
         display: none; position: absolute; top: 100%; left: 0; right: 0;
